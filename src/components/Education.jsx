@@ -33,19 +33,19 @@ function Education() {
   ];
 
   return (
-    <section className="education" id="education">
+    <section className="section education" id="education">
       <div className="container">
         <p className="section-label">Skills</p>
-        <h2>
-          Educación & <span style={{ fontStyle: "italic", color: "var(--foreground)" }}>Formación</span>
+        <h2 className="section-title">
+          Educación & <em>Formación</em>
         </h2>
 
-        <div className="edu-grid">
+        <div className="education-grid">
           {education.map((edu, index) => (
-            <div className="edu-card" key={index}>
-              <div className="edu-date">{edu.date}</div>
-              <div className="edu-title">{edu.title}</div>
-              <div className="edu-school">{edu.school}</div>
+            <div className="education-card" key={index}>
+              <div className="education-date">{edu.date}</div>
+              <h3 className="education-title">{edu.title}</h3>
+              <div className="education-school">{edu.school}</div>
             </div>
           ))}
         </div>

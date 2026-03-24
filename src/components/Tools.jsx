@@ -27,23 +27,20 @@ function Tools() {
   ];
 
   return (
-    <section className="languages-tools">
+    <section className="section">
       <div className="container">
         <p className="section-label">Inventario</p>
-        <h2>
-          Herramientas & <span style={{ fontStyle: "italic", color: "var(--foreground)" }}>Tecnologías</span>
+        <h2 className="section-title">
+          Herramientas & <em>Tecnologías</em>
         </h2>
 
-        <div className="tools-grid" style={{ marginTop: "2rem" }}>
+        <div className="tools-grid">
           {tools.map((tool, index) => (
-            <div className="tool-category" key={index}>
-              <h4>{tool.category}</h4>
+            <div className="tool-card" key={index}>
+              <h4 className="tool-title">{tool.category}</h4>
               <div className="tool-list">
                 {tool.items.map((item, i) => (
-                  <span key={i}>
-                    {item}
-                    {i < tool.items.length - 1 && <br />}
-                  </span>
+                  <div key={i}>{item}</div>
                 ))}
               </div>
             </div>

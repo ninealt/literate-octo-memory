@@ -1,12 +1,9 @@
 function Header() {
   return (
-    <header>
-      <div className="header-content">
-        <div className="logo">
-          <div className="logo-dot"></div>
-          <span>TAMARA PALMA</span>
-        </div>
-        <nav>
+    <header className="header">
+      <div className="container header-content">
+        <div className="logo">TAMARA PALMA</div>
+        <nav className="nav">
           <a href="#hero">Inicio</a>
           <a href="#skills">Habilidades</a>
           <a href="#experience">Experiencia</a>
