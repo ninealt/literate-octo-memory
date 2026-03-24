@@ -20,14 +20,16 @@ function Hero() {
             </a>
           </div>
           
-          <div className="hero-card">
-            <div className="hero-card-header">
-              <div className="hero-avatar">TP</div>
-              <div>
-                <div className="hero-card-title">Full Stack Dev</div>
-                <div className="hero-card-subtitle">Diseñadora + Developer</div>
-                <div className="hero-location">
-                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          {/* RPG Stats Card */}
+          <div className="rpg-card">
+            {/* Header con Avatar e Info */}
+            <div className="rpg-card-header">
+              <div className="rpg-avatar">TP</div>
+              <div className="rpg-title-group">
+                <div className="rpg-title">Full Stack Dev</div>
+                <div className="rpg-subtitle">Diseñadora + Developer</div>
+                <div className="rpg-location">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>
@@ -36,44 +38,57 @@ function Hero() {
               </div>
             </div>
             
-            <div className="hero-stats">
-              <div>
-                <div className="stat-row">
-                  <span className="stat-label">Desarrollo</span>
-                  <span className="stat-value">85%</span>
+            {/* Label de sección */}
+            <div className="rpg-section-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M3 3v18h18"/>
+                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+              </svg>
+              Alchemical Resonance
+            </div>
+            
+            {/* Stats con Progress Bars */}
+            <div className="rpg-stats">
+              <div className="rpg-stat-row">
+                <div className="rpg-stat-header">
+                  <span className="rpg-stat-label">Desarrollo</span>
+                  <span className="rpg-stat-value">85%</span>
                 </div>
-                <div className="stat-bar">
-                  <div className="stat-fill purple"></div>
+                <div className="rpg-progress-bg">
+                  <div className="rpg-progress-fill purple" style={{ width: '85%' }}></div>
                 </div>
               </div>
-              <div>
-                <div className="stat-row">
-                  <span className="stat-label">Diseño</span>
-                  <span className="stat-value">75%</span>
+              
+              <div className="rpg-stat-row">
+                <div className="rpg-stat-header">
+                  <span className="rpg-stat-label">Diseño</span>
+                  <span className="rpg-stat-value">75%</span>
                 </div>
-                <div className="stat-bar">
-                  <div className="stat-fill cyan"></div>
+                <div className="rpg-progress-bg">
+                  <div className="rpg-progress-fill cyan" style={{ width: '75%' }}></div>
                 </div>
               </div>
-              <div>
-                <div className="stat-row">
-                  <span className="stat-label">Inglés</span>
-                  <span className="stat-value">60%</span>
+              
+              <div className="rpg-stat-row">
+                <div className="rpg-stat-header">
+                  <span className="rpg-stat-label">Inglés</span>
+                  <span className="rpg-stat-value">60%</span>
                 </div>
-                <div className="stat-bar">
-                  <div className="stat-fill gold"></div>
+                <div className="rpg-progress-bg">
+                  <div className="rpg-progress-fill gold" style={{ width: '60%' }}></div>
                 </div>
               </div>
             </div>
             
-            <div className="hero-footer">
-              <div className="hero-stat">
-                <div className="hero-stat-value">6+</div>
-                <div className="hero-stat-label">Años Tech</div>
+            {/* Footer Stats */}
+            <div className="rpg-footer">
+              <div className="rpg-footer-stat">
+                <div className="rpg-footer-value">6+</div>
+                <div className="rpg-footer-label">Años Tech</div>
               </div>
-              <div className="hero-stat">
-                <div className="hero-stat-value">Active</div>
-                <div className="hero-stat-label">Status</div>
+              <div className="rpg-footer-stat">
+                <div className="rpg-footer-value">Active</div>
+                <div className="rpg-footer-label">Status</div>
               </div>
             </div>
           </div>
