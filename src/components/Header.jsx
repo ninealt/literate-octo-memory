@@ -2,9 +2,9 @@ function Header() {
   return (
     <header className="header">
       <div className="container header-content">
-        <div className="logo">TAMARA PALMA</div>
+        <div className="logo">Tamara Palma</div>
         <nav className="nav">
-          <a href="#hero">Inicio</a>
+          <a href="#hero" className="active">Inicio</a>
           <a href="#skills">Habilidades</a>
           <a href="#experience">Experiencia</a>
           <a href="#education">Educación</a>
