@@ -1,35 +1,32 @@
 function Hero() {
   return (
-    <section className="hero" id="hero">
-      <div className="container">
-        <div className="hero-grid">
-          <div>
-            <div className="hero-badge">Full Stack Developer</div>
-            <h1 className="hero-title">
-              <span className="first-name">Tamara</span>
-              <br />
-              <span className="last-name">Palma</span>
-            </h1>
-            <p className="hero-description">
-              Diseñadora de formación y desarrolladora Full Stack Python. Creativa, motivada, 
-              con conocimientos amplios en el área del Diseño y Tecnología. Proactiva y receptiva 
-              a los cambios del negocio.
-            </p>
-            <a href="#contact" className="hero-cta">
-              Iniciar Contacto →
-            </a>
-          </div>
-          
-          {/* RPG Stats Card */}
+    <div className="hero-container">
+      <div className="hero-grid">
+        <div>
+          <div className="hero-badge">✦ FULL STACK DEVELOPER</div>
+          <h1 className="hero-title serif">
+            <span className="first-name">Tamara</span>
+            <br />
+            <span className="last-name">Palma</span>
+          </h1>
+          <p className="hero-description">
+            Diseñadora de formación y desarrolladora Full Stack Python. Creativa, 
+            motivada, con conocimientos amplios en el área del Diseño y Tecnología. 
+            Proactiva y receptiva a los cambios del negocio.
+          </p>
+          <a href="#contact" className="hero-cta">
+            Iniciar Contacto →
+          </a>
+        </div>
+        
+        <div className="rpg-card-wrapper">
           <div className="rpg-card">
-            {/* Header con Avatar e Info */}
             <div className="rpg-card-header">
-              <div className="rpg-avatar">TP</div>
               <div className="rpg-title-group">
                 <div className="rpg-title">Full Stack Dev</div>
                 <div className="rpg-subtitle">Diseñadora + Developer</div>
                 <div className="rpg-location">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
                     <circle cx="12" cy="10" r="3"/>
                   </svg>
@@ -38,16 +35,6 @@ function Hero() {
               </div>
             </div>
             
-            {/* Label de sección */}
-            <div className="rpg-section-label">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M3 3v18h18"/>
-                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
-              </svg>
-              Alchemical Resonance
-            </div>
-            
-            {/* Stats con Progress Bars */}
             <div className="rpg-stats">
               <div className="rpg-stat-row">
                 <div className="rpg-stat-header">
@@ -80,7 +67,6 @@ function Hero() {
               </div>
             </div>
             
-            {/* Footer Stats */}
             <div className="rpg-footer">
               <div className="rpg-footer-stat">
                 <div className="rpg-footer-value">6+</div>
@@ -94,7 +80,7 @@ function Hero() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 

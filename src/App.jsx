@@ -1,26 +1,38 @@
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import FloatingStar from './components/FloatingStar';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Education from './components/Education';
-import Tools from './components/Tools';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
   return (
-    <>
+    <div className="horizontal-app">
       <Header />
-      <main>
-        <Hero />
-        <Skills />
-        <Experience />
-        <Education />
-        <Tools />
-        <Contact />
+      <Sidebar />
+      <FloatingStar />
+      <main className="horizontal-scroll">
+        <section className="panel" id="hero">
+          <Hero />
+        </section>
+        <section className="panel" id="skills">
+          <Skills />
+        </section>
+        <section className="panel" id="experience">
+          <Experience />
+        </section>
+        <section className="panel" id="education">
+          <Education />
+        </section>
+        <section className="panel" id="contact">
+          <Contact />
+        </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }
 

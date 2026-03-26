@@ -33,24 +33,20 @@ function Education() {
   ];
 
   return (
-    <section className="section education" id="education">
-      <div className="container">
-        <p className="section-label">Skills</p>
-        <h2 className="section-title">
-          Educación & <em>Formación</em>
-        </h2>
+    <div className="education-container">
+      <p className="section-label">Skills</p>
+      <h2 className="section-title serif">Educación & <em>Formación</em></h2>
 
-        <div className="education-grid">
-          {education.map((edu, index) => (
-            <div className="education-card" key={index}>
-              <div className="education-date">{edu.date}</div>
-              <h3 className="education-title">{edu.title}</h3>
-              <div className="education-school">{edu.school}</div>
-            </div>
-          ))}
-        </div>
+      <div className="education-grid">
+        {education.map((edu, index) => (
+          <div className="education-card" key={index}>
+            <div className="education-date">{edu.date}</div>
+            <h3 className="education-title">{edu.title}</h3>
+            <div className="education-school">{edu.school}</div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
 
