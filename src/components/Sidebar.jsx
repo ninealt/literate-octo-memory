@@ -83,20 +83,26 @@ function Sidebar() {
   };
 
   return (
-    <aside className="sidebar">
-      <nav className="sidebar-nav">
-        {links.map((link) => (
-          <button
-            key={link.id}
-            className={`sidebar-link ${activeSection === link.id ? 'active' : ''}`}
-            onClick={() => scrollToSection(link.id)}
-            title={link.title}
-          >
-            {icons[link.icon]}
-          </button>
-        ))}
-      </nav>
-    </aside>
+    <>
+      <aside className="sidebar">
+        <nav className="sidebar-nav">
+          {links.map((link) => (
+            <button
+              key={link.id}
+              className={`sidebar-link ${activeSection === link.id ? 'active' : ''}`}
+              onClick={() => scrollToSection(link.id)}
+              title={link.title}
+            >
+              {icons[link.icon]}
+            </button>
+          ))}
+        </nav>
+      </aside>
+      <div className="sidebar-hint">
+        <span className="sidebar-hint-arrow">◀</span>
+        <span className="sidebar-hint-text">Navega</span>
+      </div>
+    </>
   );
 }
 

@@ -1,5 +1,7 @@
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
+import NavArrows from './components/NavArrows';
+import VideoBackground from './components/VideoBackground';
 import FloatingStar from './components/FloatingStar';
 import Particles from './components/Particles';
 import CursorTrail from './components/CursorTrail';
@@ -13,8 +15,10 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="horizontal-app">
+      <VideoBackground />
       <Header />
       <Sidebar />
+      <NavArrows />
       <FloatingStar />
       <Particles />
       <CursorTrail />
