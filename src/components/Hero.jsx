@@ -1,25 +1,21 @@
+import { useState } from 'react';
+import HeroTypewriter from './HeroTypewriter';
+
 function Hero() {
+  const [showCard, setShowCard] = useState(false);
+
   return (
     <div className="hero-container">
       <div className="hero-grid">
         <div>
           <div className="hero-badge">✦ FULL STACK DEVELOPER</div>
-          <h1 className="hero-title serif">
-            <span className="first-name">Tamara</span>
-            <br />
-            <span className="last-name">Palma</span>
-          </h1>
-          <p className="hero-description">
-            Diseñadora de formación y desarrolladora Full Stack Python. Creativa, 
-            motivada, con conocimientos amplios en el área del Diseño y Tecnología. 
-            Proactiva y receptiva a los cambios del negocio.
-          </p>
+          <HeroTypewriter onComplete={() => setShowCard(true)} />
           <a href="#contact" className="hero-cta">
             Iniciar Contacto →
           </a>
         </div>
         
-        <div className="rpg-card-wrapper">
+        <div className={`rpg-card-wrapper ${showCard ? 'visible' : ''}`}>
           <div className="rpg-card">
             <div className="rpg-card-header">
               <div className="rpg-title-group">

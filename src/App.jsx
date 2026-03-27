@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import FloatingStar from './components/FloatingStar';
+import Particles from './components/Particles';
+import CursorTrail from './components/CursorTrail';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
@@ -14,6 +16,8 @@ function App() {
       <Header />
       <Sidebar />
       <FloatingStar />
+      <Particles />
+      <CursorTrail />
       <main className="horizontal-scroll">
         <section className="panel" id="hero">
           <Hero />
