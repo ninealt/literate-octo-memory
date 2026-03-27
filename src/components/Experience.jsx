@@ -33,25 +33,21 @@ function Experience() {
   ];
 
   return (
-    <section className="section" id="experience">
-      <div className="container">
-        <p className="section-label">Campañas Completadas</p>
-        <h2 className="section-title">
-          Experiencia <em>Profesional</em>
-        </h2>
+    <div className="experience-container">
+      <p className="section-label">Campañas Completadas</p>
+      <h2 className="section-title serif">Experiencia <em>Profesional</em></h2>
 
-        <div className="experience-timeline">
-          {experiences.map((exp, index) => (
-            <div className="experience-item" key={index}>
-              <div className="experience-date">{exp.date}</div>
-              <h3 className="experience-title">{exp.title}</h3>
-              <div className="experience-company">{exp.company}</div>
-              <p className="experience-desc">{exp.desc}</p>
-            </div>
-          ))}
-        </div>
+      <div className="experience-timeline">
+        {experiences.map((exp, index) => (
+          <div className="experience-item" key={index}>
+            <div className="experience-date">{exp.date}</div>
+            <h3 className="experience-title">{exp.title}</h3>
+            <div className="experience-company">{exp.company}</div>
+            <p className="experience-desc">{exp.desc}</p>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
 
