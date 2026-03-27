@@ -16,7 +16,7 @@ function Particles() {
     window.addEventListener('resize', resize);
 
     const particles = [];
-    const particleCount = 25;
+    const particleCount = 60;
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
