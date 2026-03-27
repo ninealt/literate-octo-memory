@@ -830,12 +830,40 @@ body::after {
   font-style: italic;
 }
 
+.hero-profile-title {
+  font-family: var(--font-serif);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  color: var(--accent-cyan);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+
+.hero-profile-subtitle {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
 .hero-description {
-  font-size: 1.125rem;
+  font-size: 0.9375rem;
   color: var(--text-secondary);
-  max-width: 480px;
+  max-width: 520px;
   margin-bottom: 2rem;
-  line-height: 1.8;
+}
+
+.hero-description-paragraph {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.hero-description-paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .hero-cta {
